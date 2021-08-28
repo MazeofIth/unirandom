@@ -1,0 +1,31 @@
+{
+  "name": "Universal Random Button",
+
+  "version": "0.0.0.1",
+
+  "description": "Open a random piece of content from your current site/creator — a blog post, YT video, Netflix episode, comic, wiki page or tweet.",
+
+  "manifest_version": 2,
+  "incognito": "split",
+
+  "background": {
+    "scripts": ["jquery-3.6.0.js", "background.js", "sortcurrentblogsavedlinks.js", "youtube.js", "netflix.js", "blogpost.js"]},
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "permissions": [
+   "activeTab",
+   "history"
+],
+
+"commands": {
+  "_execute_browser_action": {"suggested_key": {"default": "Ctrl+B"}}
+},
+
+
+"icons": {
+    "128": "icon.png"
+    }
+}
